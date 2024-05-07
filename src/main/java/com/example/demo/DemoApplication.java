@@ -33,7 +33,7 @@ public class DemoApplication {
                // Saludo personalizado
                "<h1>Hola " + displayName + "!</h1>" +
                // Formulario para cambiar el nombre
-               "<form action='/hello' method='get'>" + // Usando método GET para simplificar
+               "<form action='/' method='get'>" + // Usando método GET para simplificar
                "<input type='text' name='name' placeholder='Introduce Nombre'/>" +
                "<button type='submit'>OK</button>" +
                "</form>" +
