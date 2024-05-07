@@ -3,7 +3,6 @@ package com.example.demo;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -16,7 +15,7 @@ public class DemoApplication {
     }
 
     // Método combinado que muestra el formulario y el mensaje de saludo
-    @GetMapping("/hello")
+    @GetMapping("/")
     public String hello(@RequestParam(value = "name", required = false) String name) {
         // Determinar el nombre a mostrar
         String displayName = name != null ? name : "World";
